@@ -79,7 +79,7 @@ public class ScreenGame extends JPanel implements ActionListener {
 		if(running) {
 			S.move();// deplacement du serpent
 			verifierCollisions();// verifier les Collisions
-			timer.setDelay(DELAY*(1-Score/10));
+			timer.setDelay(DELAY*(1-(Score+5)/nombreDesCases));
 			eatFruit();//mangerle fruit
 		}
 		repaint();
