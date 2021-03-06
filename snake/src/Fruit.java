@@ -11,6 +11,7 @@ public class Fruit {
 	public void newfruit(int W,int H) { // repositinement aleatoirement du fruit
 		fx=random.nextInt((W/size)-1);
 		fy=random.nextInt((H/size)-1);
+		
 	}
 	public void drawf(Graphics g) { // dessine le fruit 
 		g.setColor(Color.red);
